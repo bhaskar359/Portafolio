@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bhaskar Divi</title>
+  <meta name="title" content="Bhaskar">
+  <meta name="description" content="Title site of Bhaskar">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    body, head {
+      margin: 0;
+      font-family: "Fira Mono", monospace;
+      background: #FDFFFC;
+    }
+    .body-wrapper {
+      position: relative;
+      top: 2vh;
+      left: 2vw;
+      width: 96vw;
+      height: 96vh;
+    }
+    .content-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70vw;
+      height: 70vh;
+      line-height: 4.5em;
+      max-height: 40em;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      z-index: 1;
+      color: #011627;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.16);
+    }
+    .content {
+      text-align: center;
+      margin: 0 auto;
+    }
+    .site-pre-title {
+      display: block;
+      font-size: 1em;
+      margin-top: 2em;
+    }
+    .site-title {
+      margin-top: 2em;
+      display: block;
+      font-size: 2em;
+    }
+    .site-description {
+      display: block;
+      font-size: 1.2em;
+      margin-top: 0.5em;
+    }
+    .header-icons {
+      margin-top: 2em;
+    }
+    .header-icons a {
+      text-decoration: none;
+      font-size: 2.5em;
+      padding: 0.5em;
+      transition: 0.3s;
+      color: #011627;
+    }
+    #resume:hover {
+      color: #1DA1F2;
+    }
+    #gmail:hover {
+      color: #c71610;
+    }
+    #github:hover {
+      color: #6f42c1;
+    }
+    #linkedin:hover {
+      color: #0e76a8;
+    }
+    .puddle-buttons {
+      margin-top: 3.5em;
+    }
+    .puddle-buttons a {
+      text-decoration: none;
+      font-size: 1.1em;
+      padding: 10px 15px;
+      margin: 1.5em;
+      border-radius: 5px;
+      border: 1px solid black;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #water-button:hover {
+      background: #2DB0C4;
+      color: white;
+    }
+    #ascii-button:hover {
+      background: #011627;
+      color: white;
+    }
+    #party-button:hover {
+      background: #f10018;
+      color: white;
+    }
+    #puddle-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  
+  <div class="body-wrapper">
+    <div class="content-container">
+      <div class="content">
+        <h1>
+          <span class="site-title"> Venkata Narasimha Bhaskar Divi </span>
+          <span class="site-description"> Student Enthusiast </span>
+        </h1>
+        <div class="header-icons">
+          <a id="gmail" aria-label="Send email" href="mailto:bhaskarnarendra359@gmail.com"><i class="icon fa fa-envelope"></i></a>
+          <a id="resume" aria-label="My Resume" target="_blank" href="https://drive.google.com/file/d/11olXg8K7U3kJVqq_BTS5WAmDTVd8v5-S/view?usp=sharing"><i class="fa fa-file" aria-hidden="true"></i></a>
+          <a id="github" aria-label="My Github" target="_blank" href="https://github.com/bhaskar359"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+          <a id="linkedin" aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/bhaskar-divi-912939189/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        
+      </div>
+    </div>
+    <div id="puddle-container">
+    </div>
+  </div>
+  
+  
+  <script src="js/puddle.js"></script>
+  <script src="js/mobile-check.js"></script>
+  <script>
+    let isTouchDevice = window.mobileAndTabletcheck();
+    
+    var puddle = new Puddle("#puddle-container");
+    puddle.setNodeStyle("water");
+    puddle.setRandomRippleGenerationInterval(300);
+    puddle.toggleRandomRipples();
+    puddle.setupGrid();
+    let defaultMathMode = "helias";
+    let defaultMaxRippleStrength = 100;
+    if (isTouchDevice) { // Better mobile default options
+      defaultMathMode = "helias";
+      defaultMaxRippleStrength = 250;
+      puddle.setMathMode(defaultMathMode);
+      puddle.setMaxRippleStrength(defaultMaxRippleStrength);
+      puddle.toggleRippleOnMove();
+    }
+    
+    window.onresize = () => puddle.setupGrid();
+    
+  </script>
+  
+</body>
+</html>
