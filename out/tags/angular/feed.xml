@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>bhaskar359&#39;s Blog</title>
+      <link>https://tailwind-nextjs-starter-blog.vercel.app/blog</link>
+      <description>I write mostly about web development, tech related, and sometime about my personal life.</description>
+      <language>en-us</language>
+      <managingEditor>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</managingEditor>
+      <webMaster>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</webMaster>
+      <lastBuildDate>Sat, 27 Jul 2024 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/angular/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/observables</guid>
+    <title>Observables</title>
+    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/observables</link>
+    <description>Observables are not like EventEmitters nor are they like Promises for multiple values. Observables may act like EventEmitters in some cases, namely when they are multicasted using RxJS Subjects, but usually they don&#39;t act like EventEmitters.</description>
+    <pubDate>Sat, 27 Jul 2024 00:00:00 GMT</pubDate>
+    <author>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</author>
+    <category>Observables</category><category>RxJS</category><category>Angular</category><category>JavaScript</category>
+  </item>
+
+    </channel>
+  </rss>
