@@ -8,7 +8,7 @@
       <managingEditor>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</managingEditor>
       <webMaster>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</webMaster>
       <lastBuildDate>Sat, 27 Jul 2024 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://tailwind-nextjs-starter-blog.vercel.app/tags/angular/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/observables</guid>
@@ -18,16 +18,6 @@
     <pubDate>Sat, 27 Jul 2024 00:00:00 GMT</pubDate>
     <author>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</author>
     <category>Observables</category><category>RxJS</category><category>Angular</category><category>JavaScript</category>
-  </item>
-
-  <item>
-    <guid>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</guid>
-    <title>Sample .md file</title>
-    <link>https://tailwind-nextjs-starter-blog.vercel.app/blog/code-sample</link>
-    <description>Example of a markdown file with code blocks and syntax highlighting</description>
-    <pubDate>Sun, 21 Jul 2024 00:00:00 GMT</pubDate>
-    <author>bhaskarnarendra359@gmail.com (Venkata Narasimha Bhaskar Divi)</author>
-    <category>markdown</category><category>code</category><category>features</category>
   </item>
 
     </channel>
